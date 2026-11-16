@@ -1,0 +1,162 @@
+.projects-section {
+  min-height: 85vh;
+  padding: 80px 9%;
+  background: #080d1b;
+  color: white;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.subtitle {
+  color: #a78bfa;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.section-heading h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.section-heading h1 span {
+  color: #a78bfa;
+}
+
+.description {
+  color: #a1a1aa;
+  font-size: 15px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  padding: 30px;
+  background: #11182b;
+  border: 1px solid #293253;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-7px);
+  border-color: #8b5cf6;
+  box-shadow: 0 12px 35px #6366f122;
+}
+
+.project-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.project-number {
+  color: #717a9e;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.project-icon {
+  font-size: 32px;
+}
+
+.category {
+  color: #a78bfa;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.project-card h2 {
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.project-description {
+  color: #a1a1aa;
+  font-size: 14px;
+  line-height: 1.9;
+  margin-bottom: 25px;
+}
+
+.technology-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-bottom: 25px;
+}
+
+.technology-tags span {
+  padding: 8px 11px;
+  background: #202943;
+  border: 1px solid #353f65;
+  border-radius: 6px;
+  color: #c4b5fd;
+  font-size: 11px;
+}
+
+.project-footer {
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px solid #293253;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #929ab3;
+  font-size: 12px;
+}
+
+.project-type {
+  color: #a78bfa;
+}
+
+.projects-note {
+  text-align: center;
+  margin-top: 45px;
+  color: #a1a1aa;
+  font-size: 14px;
+}
+
+.projects-note span {
+  color: #a78bfa;
+  margin-right: 8px;
+}
+
+@media (max-width: 850px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .projects-section {
+    padding: 55px 6%;
+  }
+
+  .section-heading h1 {
+    font-size: 36px;
+  }
+
+  .project-card {
+    padding: 23px;
+  }
+
+  .project-card h2 {
+    font-size: 19px;
+  }
+}

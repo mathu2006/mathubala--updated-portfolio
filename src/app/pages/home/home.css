@@ -1,0 +1,230 @@
+.hero {
+  min-height: 85vh;
+  padding: 80px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  background: #080d1b;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 650px;
+  z-index: 2;
+  animation: fadeIn 1s ease;
+}
+
+.welcome-text {
+  color: #a5b4fc;
+  letter-spacing: 3px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  background: #22c55e;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 4vw, 54px);
+  white-space: nowrap;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #818cf8, #c084fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero h2 {
+  font-size: 32px;
+  color: #a5b4fc;
+  margin-bottom: 25px;
+}
+
+.hero-description {
+  color: #a1a1aa;
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 35px;
+  white-space: pre-line;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.hero-buttons a {
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-primary {
+  color: white;
+  background: linear-gradient(90deg, #6366f1, #9333ea);
+}
+
+.btn-primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px #6366f155;
+}
+
+.btn-secondary {
+  border: 1px solid #6366f1;
+  color: #c4b5fd;
+}
+
+.btn-secondary:hover {
+  background: #6366f1;
+  color: white;
+  transform: translateY(-4px);
+}
+
+.social-links {
+  display: flex;
+  gap: 28px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  color: #a1a1aa;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #a78bfa;
+}
+
+.hero-decoration {
+  position: relative;
+  width: 420px;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.code-card {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 35px 25px;
+  border: 1px solid #353b65;
+  border-radius: 15px;
+  background: #11182b;
+  color: #e2e8f0;
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 2.1;
+  box-shadow: 0 15px 60px #6366f122;
+  animation: float 4s ease-in-out infinite;
+}
+
+.code-purple {
+  color: #c084fc;
+}
+
+.code-green {
+  color: #86efac;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(2px);
+}
+
+.circle-one {
+  width: 180px;
+  height: 180px;
+  background: #6366f1;
+  opacity: 0.18;
+  top: 0;
+  right: 0;
+}
+
+.circle-two {
+  width: 130px;
+  height: 130px;
+  background: #a855f7;
+  opacity: 0.18;
+  bottom: 0;
+  left: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    padding: 65px 7%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-decoration {
+    width: 100%;
+    max-width: 450px;
+    align-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 55px 6%;
+  }
+
+  .hero h2 {
+    font-size: 25px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+  .hero-buttons a {
+    padding: 13px 17px;
+  }
+
+  .code-card {
+    font-size: 11px;
+    padding: 25px 15px;
+  }
+}
